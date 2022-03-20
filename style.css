@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+
+:root {
+  --primary-1: #202023;
+  --primary-2: #f3f3f3;
+  --secondary: #26c7bc;
+  --accent: #b82676;
+
+  --logo-font-weight: 800;
+  --headline-font-weight: 700;
+  --button-font-weight: 600;
+  --text-font-weight: 400;
+}
+
+:root[data-theme="light"] {
+  --primary-1: #f3f3f3;
+  --primary-2: #202023;
+  --secondary: #ec138a;
+  --accent: #47e4da;
+}
+
+/* Resetter */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/* Fonts */
+body {
+  background-color: var(--primary-1);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-2);
+  font-weight: var(--headline-font-weight);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 1.953rem;
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+p {
+  color: var(--primary-2);
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--text-font-weight);
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* UI Elements */
+button {
+  display: inline-block;
+  height: 3rem;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--secondary);
+  color: var(--primary-1);
+  font-weight: var(--button-font-weight);
+}
+
+.dark_button {
+  background-color: var(--secondary);
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 250px;
+  height: 3rem;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  text-align: left;
+  background-color: #eee;
+  border-color: #ddd;
+  color: #222;
+}
+
+/* Menu */
+nav {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-1);
+}
+
+nav a {
+  color: var(--primary-2);
+  text-decoration: none;
+}
+
+nav a.logo {
+  font-weight: var(--logo-font-weight);
+  color: var(--secondary);
+  font-size: 1.25rem;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0px 1rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  min-height: 80vh;
+  padding: 5rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--primary-1);
+}
+
+header h1 {
+  color: var(--primary-2);
+}
+
+header p {
+  color: var(--primary-2);
+}
+
+header button {
+  margin-bottom: 5rem;
+}
+
+.header_text {
+  width: 30vw;
+  min-width: 300px;
+}
+
+.header_graphics {
+  width: 30vw;
+  height: 30vw;
+  min-width: 300px;
+  min-height: 300px;
+  border-radius: 300px;
+  background-color: var(--accent);
+}
+
+/* product section */
+#product {
+  padding: 2rem;
+}
+
+#product h3 {
+  font-size: 1.953rem;
+  line-height: 2.5rem;
+}
+
+#product article {
+  display: flex;
+  min-height: 50vh;
+  padding: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.product_text {
+  width: 50vw;
+  min-width: 300px;
+}
+
+.product_graphics {
+  width: 15vw;
+  height: 15vw;
+  min-width: 150px;
+  min-height: 150px;
+  margin: 3rem;
+  background-color: var(--accent);
+  border-radius: 300px;
+}
+
+/* highlight sections */
+.highlight {
+  display: flex;
+  min-height: 70vh;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.highlight div {
+  width: 80vw;
+}
+
+.highlight div h2 {
+  font-size: 3.052rem;
+  line-height: 4rem;
+}
+
+.dark {
+  background-color: var(--primary-1);
+}
+
+.dark h2 {
+  color: var(--primary-2);
+}
+
+.dark a {
+  color: var(--secondary);
+}
+
+/* request section */
+#request {
+  display: flex;
+  min-height: 50vh;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#request div {
+  width: 50vw;
+  min-width: 450px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  padding: 5vh 2rem;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: var(--primary-2);
+}
+
+footer h2,
+footer h3 {
+  color: var(--secondary);
+}
+
+footer a {
+  color: var(--primary-2);
+}
+
+footer section.left {
+  display: flex;
+  max-width: 50vw;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer section div {
+  margin: 0px 1rem 1rem 1rem;
+}
+
+input[type="checkbox"] {
+  /* styling for input element */
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  /* styling for labels */
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 27px;
+  float: left;
+  border-radius: 100px;
+  position: relative;
+  background: var(--secondary);
+}
+
+label:after {
+  /* styling for labels - on toggle */
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  /* conditional check while toggling */
+  background: var(--secondary);
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 45px;
+}
